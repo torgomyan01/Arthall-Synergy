@@ -62,6 +62,215 @@ a {
     font-size: 13px;
   }
 }
+.mb-25 {
+  margin-bottom: 1.5625rem;
+}
+
+.pt-50 {
+  padding-top: 3.125rem;
+}
+
+.mb-31 {
+  margin-bottom: 1.9375rem;
+}
+
+.mb-60 {
+  margin-bottom: 3.75rem;
+}
+
+.c-black400 {
+  color: #292929;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.lh-lg-42 {
+  line-height: 2.625rem;
+}
+
+.w-55 {
+  width: 3.4375rem;
+}
+
+.h-55 {
+  height: 3.4375rem;
+}
+
+.w-100 {
+  width: 6.25rem;
+}
+
+.bgc-gray300 {
+  background-color: #F8F8F8;
+}
+
+.pt-46 {
+  padding-top: 2.875rem;
+}
+
+.pb-46 {
+  padding-bottom: 2.875rem;
+}
+
+.mt-77 {
+  margin-top: 4.8125rem;
+}
+
+.me-30 {
+  margin-right: 1.875rem;
+}
+
+.w-80 {
+  width: 5rem;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.mt-26 {
+  margin-top: 1.625rem;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.mt-50 {
+  margin-top: 3.125rem;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+.mb-58 {
+  margin-bottom: 3.625rem;
+}
+
+.mt-61 {
+  margin-top: 3.8125rem;
+}
+
+.w-180 {
+  width: 11.25rem;
+}
+
+.h-195 {
+  height: 12.1875rem;
+}
+
+.mt-56 {
+  margin-top: 3.5rem;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.h-66 {
+  height: 4.125rem;
+}
+
+.w-315 {
+  width: 19.6875rem;
+}
+
+.minh-177 {
+  min-height: 11.0625rem;
+}
+
+.bgc-gray {
+  background-color: #F6F6F6;
+}
+
+.bgc-black {
+  background-color: #000;
+}
+
+.w-323 {
+  width: 20.1875rem;
+}
+
+.h-52 {
+  height: 3.25rem;
+}
+
+.c-white {
+  color: #FFF;
+}
+
+.mt-15 {
+  margin-top: 0.9375rem;
+}
+
+.ms-28 {
+  margin-left: 1.75rem;
+}
+
+.me-19 {
+  margin-right: 1.1875rem;
+}
+
+.me-6 {
+  margin-right: 0.375rem;
+}
+
+.w-35 {
+  width: 2.1875rem;
+}
+
+.h-35 {
+  height: 2.1875rem;
+}
+
+@media (min-width: 992px) {
+  .pt-lg-143 {
+    padding-top: 8.9375rem;
+  }
+  .fs-lg-26 {
+    font-size: 1.625rem;
+  }
+  .me-lg-129 {
+    margin-right: 8.0625rem;
+  }
+  .w-lg-116 {
+    width: 7.25rem;
+  }
+  .mt-lg-191 {
+    margin-top: 11.9375rem;
+  }
+  .fs-lg-25 {
+    font-size: 1.5625rem;
+  }
+  .fs-lg-24 {
+    font-size: 1.5rem;
+  }
+  .lh-lg-46 {
+    line-height: 2.875rem;
+  }
+  .py-lg-0 {
+    padding: 0rem 0;
+  }
+  .ms-lg-66 {
+    margin-left: 4.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .w-md-76 {
+    width: 76%;
+  }
+}
+@media (min-width: 576px) {
+  .w-sm-58 {
+    width: 3.625rem;
+  }
+  .h-sm-57 {
+    height: 3.5625rem;
+  }
+}
 body {
   background: #fff;
 }
@@ -1502,7 +1711,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 102%;
-  left: 33%;
+  left: 38%;
   border-radius: 50% !important;
   border: 1px solid #292929;
   font-size: 0;
@@ -1553,7 +1762,7 @@ body {
   height: 3.4375rem !important;
   display: inline-block;
   position: absolute !important;
-  left: 27%;
+  left: 32%;
   top: 102%;
   border-radius: 50% !important;
   padding: 0 !important;
