@@ -618,7 +618,12 @@ body {
   }
 }
 .about-us .slick-next {
-  left: 38%;
+  left: 36%;
+}
+@media (max-width: 1200px) {
+  .about-us .slick-next {
+    left: 38%;
+  }
 }
 @media (max-width: 992px) {
   .about-us .slick-next {
@@ -927,6 +932,11 @@ body {
   margin-top: 5.5rem;
   margin-bottom: 2.625rem;
   position: relative;
+}
+@media (max-width: 576px) {
+  .selection-done-inner {
+    margin-top: 0.5rem;
+  }
 }
 .selection-done-inner .box {
   max-width: 440px;
@@ -1491,7 +1501,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 102%;
-  left: 34%;
+  left: 33%;
   border-radius: 50% !important;
   border: 1px solid #292929;
   font-size: 0;

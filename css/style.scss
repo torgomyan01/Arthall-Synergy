@@ -577,7 +577,10 @@ body {
     }
   }
   .slick-next {
-    left: 38%;
+    left: 36%;
+    @media (max-width: 1200px) {
+      left: 38%;
+    }
     @media (max-width: 992px) {
       left: 3.8375rem;
     }
@@ -874,6 +877,10 @@ body {
     margin-bottom: 2.625rem;
     position: relative;
 
+    @media (max-width: 576px) {
+      margin-top: .5rem;
+    }
+
     .box {
       max-width: 440px;
       width: 100%;
@@ -988,7 +995,6 @@ body {
           left: 5%;
           max-width: 280px;
         }
-
         h3 {
           color: #000;
         }
@@ -1382,7 +1388,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 102%;
-  left: 34%;
+  left: 33%;
   border-radius: 50% !important;
   border: 1px solid #292929;
   font-size: 0;
