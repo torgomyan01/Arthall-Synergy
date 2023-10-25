@@ -276,7 +276,6 @@ body {
 
 // .......... Menu....
 
-
 .menu {
   height: 160px;
   display: -webkit-box;
@@ -381,7 +380,6 @@ body {
         }
       }
     }
-
 
     &-link {
       white-space: nowrap;
@@ -1534,12 +1532,9 @@ body {
           }
         }
       }
-
       .slick-dots {
         display: none !important;
       }
-
-
       .slick-track {
         display: -webkit-box;
         display: -ms-flexbox;
