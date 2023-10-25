@@ -39,17 +39,8 @@ function checkWindow(){
     }
 }
 
-function checkWindowImage(){
-    const windowWidth = $(window).width();
-    if(windowWidth > 768){
-        return 2500
-    } else {
-        return 2000
-    }
-}
 
 //........ Slider
-
 
 $('#slider-one').slick({
     dots: true,
