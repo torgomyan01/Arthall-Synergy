@@ -1149,6 +1149,7 @@ body {
   .news {
     margin-top: 45px;
     height: 350px;
+    margin-bottom: 44px;
   }
 }
 .news-inner {
