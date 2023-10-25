@@ -1139,20 +1139,15 @@ body {
   margin-top: 7.0625rem;
   margin-bottom: 88px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .news {
-    height: 490px;
+    height: 540px;
   }
 }
 @media (max-width: 576px) {
   .news {
-    height: 360px;
     margin-top: 45px;
-  }
-}
-@media (max-width: 375px) {
-  .news {
-    height: 320px;
+    height: 350px;
   }
 }
 .news-inner {
