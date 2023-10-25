@@ -18,15 +18,15 @@ const nextBtn = $('#next-howItWorking');
 
 let imageLeft = 0;
 
-nextBtn.on('click', function (event){
-    imageLeft < checkWindowImage() ? imageLeft += checkWindow() : imageLeft = 0;
-    $('#howItWorking img').css('transform', ` translateX(-${imageLeft}px)`);
+nextBtn.on('click', function (){
+    // imageLeft < checkWindowImage() ? imageLeft += checkWindow() : imageLeft = 0;
+    // $('#howItWorking img').css('transform', ` translateX(-${imageLeft}px)`);
+    howItWorkingSlider.scrollLeft(howItWorkingSlider.scrollLeft() + 300)
 })
 
 
-prevBtn.on('click', function (event) {
-    imageLeft < checkWindowImage() ? imageLeft -= checkWindow() : imageLeft = 0;
-    $('#howItWorking img').css('transform', ` translateX(-${imageLeft}px)`);
+prevBtn.on('click', function () {
+    howItWorkingSlider.scrollLeft(howItWorkingSlider.scrollLeft() - 300)
 })
 
 
@@ -146,11 +146,18 @@ $('#slider-two').slick({
     if(!slick.$dots){
         return;
     }
-
     const i = (currentSlide ? currentSlide : 0) + 1;
-
     $('.count.slider-two span').text(i + '/' + (slick.$dots[0].children.length));
 })
+
+
+$(window).on('resize', function (){
+    const windowWidth = $(window).width();
+    const containerWidth = $('.container').width();
+    const result = containerWidth + ((windowWidth - containerWidth) / 2);
+
+    $('.howItWorking-slider').css('width', `${result}px`)
+}).resize()
 
 
 

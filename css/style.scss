@@ -487,19 +487,24 @@ body {
 }
 
 .howItWorking {
-  &-slider {
-    overflow-x: auto;
-    width: calc((100vh / 2) + 1400px);
-    &::-webkit-scrollbar {
-      height: 0;
-    }
-    img {
-      transform: translateX(0);
-      height: auto;
-      transition: 0.3s;
-      @media (max-width: 992px) {
-        width: 2000px;
-      }
+
+}
+
+.howItWorking-slider {
+  overflow-x: auto;
+  position: relative;
+  //left: calc((100vw / 2) - 20vw);
+  // width: calc(100% + 500px);
+  // width: auto;
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+  img {
+    transform: translateX(0);
+    height: auto;
+    transition: 0.3s;
+    @media (max-width: 992px) {
+      width: 2000px;
     }
   }
 }

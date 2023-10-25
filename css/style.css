@@ -528,7 +528,7 @@ body {
 
 .howItWorking-slider {
   overflow-x: auto;
-  width: calc(50vh + 1400px);
+  position: relative;
 }
 .howItWorking-slider::-webkit-scrollbar {
   height: 0;
