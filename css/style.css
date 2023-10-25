@@ -1025,9 +1025,10 @@ body {
 }
 @media (max-width: 768px) {
   .selection-done-inner .box.box4 {
-    left: 6%;
+    left: 5%;
     top: 354%;
-    max-width: 350px !important;
+    max-width: 320px !important;
+    padding-left: 10px;
     z-index: 10;
   }
 }

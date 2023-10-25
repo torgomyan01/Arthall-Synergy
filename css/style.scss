@@ -945,9 +945,10 @@ body {
           top: 128%;
         }
         @media (max-width: 768px) {
-          left: 6%;
+          left: 5%;
           top: 354%;
-          max-width: 350px !important;
+          max-width: 320px !important;
+          padding-left: 10px;
           z-index: 10;
         }
         @media (max-width: 576px) {
