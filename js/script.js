@@ -19,13 +19,13 @@ const nextBtn = $('#next-howItWorking');
 let imageLeft = 0;
 
 nextBtn.on('click', function (event){
-    imageLeft < 2500 ? imageLeft += checkWindow() : imageLeft = 0;
+    imageLeft < checkWindowImage() ? imageLeft += checkWindow() : imageLeft = 0;
     $('#howItWorking img').css('transform', ` translateX(-${imageLeft}px)`);
 })
 
 
 prevBtn.on('click', function (event) {
-    imageLeft < 2500 ? imageLeft -= checkWindow() : imageLeft = 0;
+    imageLeft < checkWindowImage() ? imageLeft -= checkWindow() : imageLeft = 0;
     $('#howItWorking img').css('transform', ` translateX(-${imageLeft}px)`);
 })
 
@@ -36,6 +36,15 @@ function checkWindow(){
         return 500
     } else {
         return 200
+    }
+}
+
+function checkWindowImage(){
+    const windowWidth = $(window).width();
+    if(windowWidth > 768){
+        return 2500
+    } else {
+        return 2000
     }
 }
 
