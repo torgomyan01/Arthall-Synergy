@@ -916,8 +916,9 @@ body {
         @media (max-width: 768px) {
           left: 0;
           max-width: 350px;
-          top: 311%;
+          top: 255%;
           padding: 1.625rem 1.25rem 1.875rem 2.1875rem;
+          z-index: 1;
         }
         @media (max-width: 576px) {
           max-width: 310px;
@@ -945,8 +946,9 @@ body {
         }
         @media (max-width: 768px) {
           left: 6%;
-          top: 431%;
+          top: 354%;
           max-width: 350px !important;
+          z-index: 10;
         }
         @media (max-width: 576px) {
           max-width: 325px !important;
