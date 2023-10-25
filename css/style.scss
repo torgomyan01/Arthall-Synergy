@@ -878,7 +878,7 @@ body {
     position: relative;
 
     @media (max-width: 576px) {
-      margin-top: .5rem;
+      margin-top: -1rem;
     }
 
     .box {
@@ -896,6 +896,7 @@ body {
       justify-content: start;
       @media (max-width: 768px) {
         max-width: 350px;
+        padding-top: 40px;
       }
       @media (max-width: 768px) {
         max-width: 287px;

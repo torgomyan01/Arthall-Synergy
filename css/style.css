@@ -935,7 +935,7 @@ body {
 }
 @media (max-width: 576px) {
   .selection-done-inner {
-    margin-top: 0.5rem;
+    margin-top: -1rem;
   }
 }
 .selection-done-inner .box {
@@ -955,6 +955,7 @@ body {
 @media (max-width: 768px) {
   .selection-done-inner .box {
     max-width: 350px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 768px) {
