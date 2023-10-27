@@ -8,28 +8,27 @@ const {
 
 AOS.init();
 
-const howItWorkingSlider = $('.howItWorking-slider');
+const howItWorkingSlider = $('.howItWorking-slider img');
 const prevBtn = $('#prev-howItWorking');
 const nextBtn = $('#next-howItWorking');
 
+let howItWorkingSliderPercent = 0;
+
 nextBtn.on('click', function (){
-    const scrollLeft = howItWorkingSlider.scrollLeft();
-    howItWorkingSlider.scrollLeft(scrollLeft + 300)
+    howItWorkingSliderPercent -= 15;
+    if(howItWorkingSliderPercent <= -105){
+        howItWorkingSliderPercent = 0;
+    }
+    howItWorkingSlider.css('transform', `translateX(${howItWorkingSliderPercent}%)`);
 })
 
 prevBtn.on('click', function () {
-    const scrollLeft = howItWorkingSlider.scrollLeft();
-    howItWorkingSlider.scrollLeft(scrollLeft - 300);
-})
-
-function checkWindow(){
-    const windowWidth = $(window).width();
-    if(windowWidth > 768){
-        return 500
-    } else {
-        return 200
+    howItWorkingSliderPercent += 15;
+    if(howItWorkingSliderPercent >= 15){
+        howItWorkingSliderPercent = -90;
     }
-}
+    howItWorkingSlider.css('transform', `translateX(${howItWorkingSliderPercent}%)`);
+})
 
 $('#slider-one').slick({
     dots: true,
@@ -38,10 +37,12 @@ $('#slider-one').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    prevArrow: $('#prevBtnSliderOne'),
+    nextArrow: $('#nextBtnSliderOne')
 }).on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     const i = (currentSlide ? currentSlide : 0) + 1;
-    $('.count.slider-one span').text(i + '/' + (slick.$dots[0].children.length));
+    $('.about-us-left-count.slide-one').text(i + '/' + (slick.$dots[0].children.length));
 })
 
 $('#slider-two').slick({
@@ -51,13 +52,15 @@ $('#slider-two').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    prevArrow: $('#prevBtnSliderTwo'),
+    nextArrow: $('#nextBtnSliderTwo')
 }).on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     if(!slick.$dots){
         return;
     }
     const i = (currentSlide ? currentSlide : 0) + 1;
-    $('.count.slider-two span').text(i + '/' + (slick.$dots[0].children.length));
+    $('.news-left-count.slide-two').text(i + '/' + (slick.$dots[0].children.length));
 })
 
 
