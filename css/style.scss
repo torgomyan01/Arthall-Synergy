@@ -261,7 +261,7 @@ body {
 }
 
 .btn-def {
-  padding: 0.625rem 1.5625rem;
+  padding: 10px 25px;
   border-radius: 100px;
   border: 2px solid #1D1D1D;
   color: #1D1D1D;
@@ -841,6 +841,9 @@ body {
     padding-top: 4.875rem;
     padding-left: 19.375rem;
     position: relative;
+    .slick-track{
+      padding-top: 20px;
+    }
     @media (max-width: 1200px){
       padding-left: 14.375rem;
     }
