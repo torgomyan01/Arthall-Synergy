@@ -238,6 +238,12 @@ body {
   background: #fff;
 }
 
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   max-width: 1400px;
 }
@@ -265,7 +271,10 @@ body {
   text-transform: uppercase;
   cursor: default;
   background: transparent;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
   white-space: nowrap;
   @media (max-width: 576px) {
     font-size: 1rem;
@@ -548,9 +557,8 @@ body {
       width: 100%;
       position: absolute;
       z-index: -1;
-      right: -30px;
+      right: -80px;
       top: -112px;
-
       &:after {
         content: "";
         width: 100px;
@@ -561,7 +569,6 @@ body {
         right: 0;
         top: 0;
       }
-
       &:before {
         content: "";
         width: 100px;
@@ -599,8 +606,8 @@ body {
         white-space: nowrap;
         position: absolute;
         top: 91%;
-        padding: 20px;
-        left: 42%;
+        padding: 1.5625rem 2.1875rem 0.875rem 1.5625rem;
+        left: 47%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 1;
@@ -625,8 +632,8 @@ body {
         background: #F6F6F6;
         white-space: nowrap;
         position: absolute;
-        top: 108%;
-        padding: 1.25rem;
+        top: 104%;
+        padding: 24px 33px 14px 14px;
         left: 70%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -650,7 +657,7 @@ body {
   }
 
   &-title {
-    margin-top: 12.6875rem;
+    margin-top: 8.6875rem;
     @media (max-width: 1024px) {
       margin-top: 9rem;
     }
@@ -709,6 +716,8 @@ body {
 
 .howItWorking-slider {
   position: relative;
+  overflow-x: auto;
+  padding-right: 20px;
 
   &::-webkit-scrollbar {
     height: 0;
@@ -730,7 +739,10 @@ body {
 //. Info
 
 .info{
-
+  margin-top: 4.8125rem;
+  @media (max-width: 576px) {
+       margin-top: 3.4375rem;
+  }
   &-logo{
     @media (max-width: 576px) {
       width: 43px;
@@ -741,6 +753,7 @@ body {
   &-about-text{
     max-width: 1100px;
     width: 100%;
+
     @media (max-width: 576px) {
       color: #292929;
       font-feature-settings: 'clig' off, 'liga' off;
@@ -751,7 +764,12 @@ body {
     }
   }
 
+  &-user-image{
+    margin-top: 2.125rem;
+  }
+
   &-user-text{
+    margin-top: 1.5px;
     span{
       color: #292929;
       font-feature-settings: 'clig' off, 'liga' off;
@@ -778,7 +796,10 @@ body {
 .about-us{
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
-  margin-top: 4.125rem ;
+  margin-top: 3.9rem;
+  @media (max-width: 576px) {
+    margin-top: 2rem;
+  }
   .slick-dots{
     display: none !important;
   }
@@ -853,7 +874,7 @@ body {
         font-size: 1.75rem;
         font-weight: 400;
         line-height: 3.40625rem;
-        margin-top: -13px;
+        margin-top: -16px;
         @media (max-width: 1200px){
           font-size: 1.3rem;
           line-height: unset;
@@ -873,7 +894,7 @@ body {
         width: calc(100% + 60px);
         position: relative;
         left: -60px;
-        margin-top: 28px;
+        margin-top: 23px;
         margin-bottom: 1.875rem;
       }
     }
@@ -889,7 +910,10 @@ body {
 
 
 .synergyEffect {
-
+  margin-top: 7.6875rem;
+  @media (max-width: 768px) {
+    margin-top: 2.8125rem;
+  }
   .nav-tabs-scroll {
     overflow-x: auto;
 
@@ -955,6 +979,10 @@ body {
   margin-top: 6.4375rem;
   @media (max-width: 576px) {
     margin-top: 3rem;
+  }
+
+  &-btn{
+    padding: 0.625rem 1.5625rem;
   }
 
   &-inner {
@@ -1252,6 +1280,10 @@ body {
 .news{
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
+  margin-top: 5.1875rem ;
+  @media (max-width: 576px) {
+    margin-top: 3.125rem;
+  }
   .slick-dots{
     display: none !important;
   }
@@ -1334,10 +1366,11 @@ body {
         width: 70%;
         position: relative;
         left: 30%;
-        top: -100px;
+        top: -150px;
         background: #fff;
         padding: 15px;
-        margin-bottom: -100px;
+        margin-bottom: -150px;
+
         @media (max-width: 576px) {
           top: -80px;
           margin-bottom: -80px;
@@ -1362,6 +1395,9 @@ body {
         color: rgba(0, 0, 0, 0.5);
         font-size: 1.5rem;
         font-weight: 400;
+        position: relative;
+        top: 48px;
+        left: 37px;
         @media (max-width: 576px) {
           font-size: 1.3rem;
         }

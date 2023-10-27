@@ -8,26 +8,26 @@ const {
 
 AOS.init();
 
-const howItWorkingSlider = $('.howItWorking-slider img');
+const howItWorkingSlider = $('.howItWorking-slider');
 const prevBtn = $('#prev-howItWorking');
 const nextBtn = $('#next-howItWorking');
 
-let howItWorkingSliderPercent = 0;
+// let howItWorkingSliderPercent = 0;
 
 nextBtn.on('click', function (){
-    howItWorkingSliderPercent -= 15;
-    if(howItWorkingSliderPercent <= -105){
-        howItWorkingSliderPercent = 0;
-    }
-    howItWorkingSlider.css('transform', `translateX(${howItWorkingSliderPercent}%)`);
+
+    const scroll = howItWorkingSlider.scrollLeft();
+    howItWorkingSlider.scrollLeft(scroll + 500)
+    // howItWorkingSliderPercent -= 15;
+    // if(howItWorkingSliderPercent <= -90){
+    //     howItWorkingSliderPercent = 0;
+    // }
+    // howItWorkingSlider.css('transform', `translateX(${howItWorkingSliderPercent}%)`);
 })
 
 prevBtn.on('click', function () {
-    howItWorkingSliderPercent += 15;
-    if(howItWorkingSliderPercent >= 15){
-        howItWorkingSliderPercent = -90;
-    }
-    howItWorkingSlider.css('transform', `translateX(${howItWorkingSliderPercent}%)`);
+    const scroll = howItWorkingSlider.scrollLeft();
+    howItWorkingSlider.scrollLeft(scroll - 500)
 })
 
 $('#slider-one').slick({
@@ -67,9 +67,9 @@ $('#slider-two').slick({
 $(window).on('resize', function (){
     const windowWidth = $(window).width();
     const containerWidth = $('.container').width();
-    const result = containerWidth + ((windowWidth - containerWidth) / 2);
+    const result = (windowWidth - containerWidth) / 2;
 
-    $('.howItWorking-slider').css('width', `${result}px`);
+    $('.howItWorking-slider').css('padding-left', `${result}px`);
 }).resize()
 
 
