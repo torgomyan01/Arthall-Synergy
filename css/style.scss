@@ -593,6 +593,8 @@ body {
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
+        position: relative;
+        left: 50px;
       }
 
       h2 {
